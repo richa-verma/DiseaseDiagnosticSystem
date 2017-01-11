@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="920.0" prefWidth="1400.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <children>
+            <Pane prefHeight="570.0" prefWidth="858.0" AnchorPane.bottomAnchor="221.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="685.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <SplitPane dividerPositions="0.3003" prefHeight="920.0" prefWidth="1400.0" styleClass="background">
+                    <items>
+                      <AnchorPane prefHeight="638.0" prefWidth="310.0" styleClass="background">
+                           <children>
+                              <TabPane layoutY="7.0" prefHeight="918.0" prefWidth="416.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <tabs>
+                                  <Tab text="Symptoms">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="883.0" prefWidth="413.0">
+                                             <children>
+                                                <VBox layoutX="9.0" layoutY="7.0" prefHeight="789.0" prefWidth="399.0" style="-fx-background-color: #A7DCF6;" />
+                                                <VBox layoutX="21.0" layoutY="34.0" prefHeight="85.0" prefWidth="248.0" spacing="6.0">
+                                                   <children>
+                                                      <CheckBox fx:id="cb1" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" text="JointPain" />
+                                                      <CheckBox fx:id="cb2" layoutX="14.0" layoutY="54.0" mnemonicParsing="false" text="FrequentFractures" />
+                                                      <CheckBox fx:id="cb3" layoutX="39.0" layoutY="72.0" mnemonicParsing="false" text="LossOfHeight" />
+                                                   </children>
+                                                </VBox>
+                                                <Label layoutX="20.0" layoutY="8.0" prefHeight="26.0" prefWidth="308.0" styleClass="label-header" text="Bone Related Symptoms" />
+                                                <Button layoutX="286.0" layoutY="712.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="26.0" prefWidth="87.0" text="Submit" />
+                                                <Label layoutX="20.0" layoutY="106.0" prefHeight="26.0" prefWidth="308.0" styleClass="label-header" text="Chest &amp; Respiratory Symptoms" />
+                                                <VBox layoutX="21.0" layoutY="132.0" prefHeight="139.0" prefWidth="248.0" spacing="6.0">
+                                                   <children>
+                                                      <CheckBox fx:id="cb44" mnemonicParsing="false" onAction="#handleButtonAction" text="Cough" />
+                                                      <CheckBox fx:id="cb12" mnemonicParsing="false" onAction="#handleButtonAction" text="Breathlessness" />
+                                                      <CheckBox fx:id="cb45" mnemonicParsing="false" onAction="#handleButtonAction" text="SoreThroat" />
+                                                      <CheckBox fx:id="cb16" mnemonicParsing="false" onAction="#handleButtonAction" text="Palpitations" />
+                                                      <CheckBox fx:id="cb17" mnemonicParsing="false" onAction="#handleButtonAction" text="IrregularHeartbeat" />
+                                                      <CheckBox fx:id="cb21" mnemonicParsing="false" onAction="#handleButtonAction" text="ChestPain" />
+                                                      <CheckBox fx:id="cb10" mnemonicParsing="false" onAction="#handleButtonAction" text="LungInfection" />
+                                                   </children>
+                                                </VBox>
+                                                <Label layoutX="20.0" layoutY="302.0" prefHeight="26.0" prefWidth="308.0" styleClass="label-header" text="Gastric Symptoms" />
+                                                <VBox layoutX="21.0" layoutY="328.0" prefHeight="71.0" prefWidth="248.0" spacing="6.0">
+                                                   <children>
+                                                      <CheckBox fx:id="cb22" mnemonicParsing="false" onAction="#handleButtonAction" text="LooseMotion" />
+                                                      <CheckBox fx:id="cb23" mnemonicParsing="false" onAction="#handleButtonAction" text="Vomiting" />
+                                                      <CheckBox fx:id="cb24" mnemonicParsing="false" onAction="#handleButtonAction" text="AbdominalPain" />
+                                                   </children>
+                                                </VBox>
+                                                <Label layoutX="20.0" layoutY="399.0" prefHeight="26.0" prefWidth="308.0" styleClass="label-header" text="Other Symptoms" />
+                                                <VBox layoutX="21.0" layoutY="431.0" prefHeight="365.0" prefWidth="248.0" spacing="6.0">
+                                                   <children>
+                                                      <CheckBox fx:id="cb25" mnemonicParsing="false" onAction="#handleButtonAction" text="Fever" />
+                                                      <CheckBox fx:id="cb15" mnemonicParsing="false" onAction="#handleButtonAction" text="IncreasedUrination" />
+                                                      <CheckBox fx:id="cb27" mnemonicParsing="false" onAction="#handleButtonAction" text="Headache" />
+                                                      <CheckBox fx:id="cb18" mnemonicParsing="false" onAction="#handleButtonAction" text="LeftArmPain" />
+                                                      <CheckBox fx:id="cb20" mnemonicParsing="false" onAction="#handleButtonAction" text="Fainting" />
+                                                      <CheckBox fx:id="cb6" mnemonicParsing="false" text="TinglingInLegs" />
+                                                      <CheckBox fx:id="cb9" mnemonicParsing="false" onAction="#handleButtonAction" text="BluishSkin" />
+                                                      <CheckBox fx:id="cb11" mnemonicParsing="false" onAction="#handleButtonAction" text="PoorWeightGain" />
+                                                      <CheckBox fx:id="cb7" mnemonicParsing="false" onAction="#handleButtonAction" text="Paleness" />
+                                                      <CheckBox fx:id="cb19" mnemonicParsing="false" onAction="#handleButtonAction" text="Hypertension" />
+                                                      <CheckBox fx:id="cb14" mnemonicParsing="false" onAction="#handleButtonAction" text="ExcessiveThirst" />
+                                                      <CheckBox fx:id="cb13" mnemonicParsing="false" onAction="#handleButtonAction" text="WeightLoss" />
+                                                      <CheckBox fx:id="cb5" mnemonicParsing="false" text="Fatigue" />
+                                                      <CheckBox fx:id="cb8" mnemonicParsing="false" onAction="#handleButtonAction" text="MentalConfusion" />
+                                                      <CheckBox fx:id="cb4" mnemonicParsing="false" text="Dizziness" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                  <Tab text="Habits">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox layoutX="9.0" layoutY="7.0" prefHeight="833.0" prefWidth="399.0" style="-fx-background-color: #A7DCF6;" />
+                                                <VBox layoutX="25.0" layoutY="69.0" spacing="12.0">
+                                                   <children>
+                                                      <CheckBox fx:id="cb28" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleButtonAction" text="SedentaryLifestyle" />
+                                                      <CheckBox fx:id="cb29" layoutX="14.0" layoutY="54.0" mnemonicParsing="false" onAction="#handleButtonAction" text="FrequentBloodDonation" />
+                                                      <CheckBox fx:id="cb30" layoutX="39.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleButtonAction" text="PoorDiet" />
+                                                      <CheckBox fx:id="cb31" layoutX="48.0" layoutY="96.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Alcoholism" />
+                                                      <CheckBox fx:id="cb32" layoutX="48.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleButtonAction" text="HighSugarIntake" />
+                                                      <CheckBox fx:id="cb33" mnemonicParsing="false" onAction="#handleButtonAction" text="LackOfExercise" />
+                                                      <CheckBox fx:id="cb34" mnemonicParsing="false" onAction="#handleButtonAction" text="HighFatDiet" />
+                                                      <CheckBox fx:id="cb35" mnemonicParsing="false" onAction="#handleButtonAction" text="FrequentAggression" />
+                                                      <CheckBox fx:id="cb36" mnemonicParsing="false" onAction="#handleButtonAction" text="PoorHygiene" />
+                                                      <CheckBox fx:id="cb37" mnemonicParsing="false" onAction="#handleButtonAction" text="ContaminatedFoodIntake" />
+                                                   </children>
+                                                </VBox>
+                                                <Label layoutX="22.0" layoutY="14.0" prefHeight="37.0" prefWidth="357.0" styleClass="label-header" text="Patient's Lifestyle &amp; Habits" />
+                                                <Button layoutX="310.0" layoutY="722.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="26.0" prefWidth="73.0" text="Submit" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab text="History">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox layoutX="9.0" layoutY="7.0" prefHeight="833.0" prefWidth="399.0" style="-fx-background-color: #A7DCF6;" />
+                                                <VBox layoutX="21.0" layoutY="24.0" spacing="8.0" />
+                                                <CheckBox fx:id="cb38" layoutX="21.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Jaundice" />
+                                                <Label layoutX="21.0" layoutY="14.0" prefHeight="37.0" prefWidth="357.0" styleClass="label-header" text="Patient's History" />
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                    <Tab text="ParentHistory">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox layoutX="9.0" layoutY="7.0" prefHeight="833.0" prefWidth="399.0" style="-fx-background-color: #A7DCF6;" />
+                                                <VBox layoutX="28.0" layoutY="66.0" spacing="12.0">
+                                                   <children>
+                                                      <CheckBox fx:id="cb39" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Diabetes" />
+                                                      <CheckBox fx:id="cb40" layoutX="14.0" layoutY="54.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Anaemia" />
+                                                      <CheckBox fx:id="cb41" layoutX="39.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Osteoporosis" />
+                                                      <CheckBox fx:id="cb42" layoutX="48.0" layoutY="96.0" mnemonicParsing="false" onAction="#handleButtonAction" text="CardioVascularDisease" />
+                                                      <CheckBox fx:id="cb43" mnemonicParsing="false" onAction="#handleButtonAction" text="CongenitalHeartDisease" />
+                                                   </children>
+                                                </VBox>
+                                                <Label layoutX="28.0" layoutY="14.0" prefHeight="37.0" prefWidth="357.0" styleClass="label-header" text="Patient's Parent History" />
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                    <Tab text="Age ">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox layoutX="9.0" layoutY="7.0" prefHeight="833.0" prefWidth="399.0" style="-fx-background-color: #A7DCF6;">
+                                                   <children>
+                                                      <Label prefHeight="37.0" prefWidth="357.0" styleClass="label-header" text="     Patient's Age" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox layoutX="28.0" layoutY="66.0" spacing="12.0">
+                                                   <children>
+                                                      <CheckBox fx:id="cb391" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Infant" />
+                                                      <CheckBox fx:id="cb401" layoutX="14.0" layoutY="54.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Young" />
+                                                      <CheckBox fx:id="cb411" layoutX="39.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Middle- aged" />
+                                                      <CheckBox fx:id="cb421" layoutX="48.0" layoutY="96.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Old" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                </tabs>
+                                 <effect>
+                                    <DropShadow color="#0000007b" />
+                                 </effect>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="561.0" prefWidth="587.0" styleClass="background">
+                           <children>
+                              <SplitPane dividerPositions="0.48484848484848486" layoutY="-1.0" orientation="VERTICAL" prefHeight="918.0" prefWidth="974.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane fx:id="anchor" prefHeight="328.0" prefWidth="642.0" styleClass="background">
+                                       <children>
+                                          <WebView fx:id="browse" layoutX="8.0" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="305.0" prefWidth="638.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0" />
+                                          <Button layoutX="37.0" layoutY="371.0" mnemonicParsing="false" onAction="#onWebclick" text="View Graph" />
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane styleClass="background">
+                                       <children>
+                                          <HBox layoutX="6.0" layoutY="5.0" prefHeight="375.0" prefWidth="962.0" style="-fx-background-color: #A7DCF6;" />
+                                          <TextArea fx:id="querybox" layoutX="12.0" layoutY="35.0" onMouseClicked="#handleQuery" prefHeight="231.0" prefWidth="949.0" promptText="Enter SPARQL Query" AnchorPane.bottomAnchor="202.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="35.0">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </TextArea>
+                                          <Button layoutX="29.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleQuery" onMouseClicked="#handleQuery" prefHeight="26.0" prefWidth="87.0" text="Query" />
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

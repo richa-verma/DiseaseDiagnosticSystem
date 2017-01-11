@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="699.0" prefWidth="1100.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OutController">
+   <children>
+      <Pane fx:id="pane" layoutY="7.0" prefHeight="699.0" prefWidth="1100.0" styleClass="background" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="451.0" layoutY="80.0" opacity="0.9" prefHeight="510.0" prefWidth="427.0" style="-fx-background-color: #BDBDBD;">
+               <children>
+                  <Label alignment="CENTER" layoutX="337.0" layoutY="32.0" prefHeight="32.0" prefWidth="427.0" styleClass="label-header" text="Probable Diseases with their Beliefs" />
+                  <TextArea fx:id="textArea" layoutX="359.0" layoutY="72.0" prefHeight="91.0" prefWidth="400.0" />
+                  <Label alignment="CENTER" layoutX="337.0" layoutY="187.0" prefHeight="32.0" prefWidth="427.0" styleClass="label-header" text="Recommended Tests" />
+                  <TextArea fx:id="testArea" layoutX="359.0" layoutY="236.0" prefHeight="91.0" prefWidth="400.0" />
+                  <Label alignment="CENTER" layoutX="346.0" layoutY="350.0" prefHeight="32.0" prefWidth="427.0" styleClass="label-header" text="Weblinks to Path Labs " />
+                  <Hyperlink layoutX="363.0" layoutY="413.0" prefHeight="24.0" prefWidth="400.0" text="www.srlworld.com/" />
+                  <Hyperlink layoutX="366.0" layoutY="450.0" prefHeight="24.0" prefWidth="400.0" text="https://www.lalpathlabs.com/" />
+                  <Hyperlink layoutX="366.0" layoutY="487.0" prefHeight="24.0" prefWidth="400.0" text="corediagnostics.in/" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="528.0" layoutY="566.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onSubmitClicked" text="BayesNet" textAlignment="CENTER" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
